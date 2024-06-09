@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machiaveli Restaurant</title>
+    <link rel="stylesheet" href="./CSS/common.css">
+    <link rel="stylesheet" href="./CSS/reservation.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <img src="./IMG/Logo1.jpg" alt="my logo" class="logo">
+            <ul>
+                <li><a href="Index.html">Home</a> </li>
+                <li><a href="about.html">About</a>  </li>
+                <li><a href="menu.html">Menu</a>  </li>
+                <li><a href="reservation.html">Reservation</a>  </li>
+                <li><a href="contact.html">Contact</a>  </li>
+            </ul>
+        </div>
+        <div class="navbar">Machiaveli Restaurant</div>
+        <div class="reservation-form">
+            <h1>Make a reservation</h1>
+            <action="process-reservation.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="date">Date</label>
+                <input type="date" id="date" name="Date" required>
+                <label for="time">Time</label>
+                <input type="time" id="time" name="time" required>
+                <label for="party-size">Party-size</label>
+                <input type="number" id="party-size" name="party-size" min="1" required>
+                <label for="special-requests">special-requests</label>
+                <textarea id="special-requests" name="special-requests"></textarea>
+                <input type="submit" value="Book Now">
+
+
+            </form>
+        </div>
+        <div class="footer">
+            <p>@ Machiaveli Restaurant 2024. All rights reserved.</p>
+        </div>
+    
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machiaveli Restaurant</title>
+    <link rel="stylesheet" href="./CSS/contact.css">
+    <link rel="stylesheet" href="./CSS/common.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+          <img src="./IMG/Logo1.jpg" alt="logo" class="logo">
+           <ul>
+            <li><a href="Index.html">Home</a> </li>
+            <li><a href="about.html">About</a>  </li>
+            <li><a href="menu.html">Menu</a>  </li>
+            <li><a href="reservation.html">Reservation</a>  </li>
+            <li><a href="contact.html">Contact</a>  </li>
+            </ul>
+        </div>
+        <p class="contact">We would love to hear from you. Please fill out the form below or contact us through any of the following methods.</p>
+
+        <form class="form" action="send.php" method="post">
+            <input type="text" name="name" placeholder="Your name" required>
+            <span class="error-message" id="name-error"></span>
+            <input type="email" name="email" placeholder="Your email" required>
+            <span class="error-message" id="email-error"></span>
+            <textarea name="Message" placeholder="Your message" rows="10" required></textarea>
+            <span class="error-message" id="message-error"></span>
+            <p> <input type="submit" name="submit" value="send"> </p>
+        </form>
+
+        <script src="script.js"></script>
+
+    
+     <div class="info">
+        <div class="info-item">
+            <h3>Address</h3>
+            <p>Machiaveli Restaurant<br>
+               Kenyatta street,Kitale<br>
+               Kenya
+            </p>
+        </div>
+        <div class="info-item">
+            <h3>Phone</h3>
+            <p>+254 791786525</p>
+        </div>
+        <div class="info-item">
+            <h3>Email</h3>
+            <p>machiavelirestaurant@gmail.com</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+        <p>@Machiaveli Restaurant 2024. All rights reserved</p>
+    </div>
+    
+</body>
+</html>
